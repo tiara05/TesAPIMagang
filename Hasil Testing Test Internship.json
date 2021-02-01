@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "49607252-5bbe-473b-aed0-861a4b4b3969",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/posts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Feb 2021 09:55:25 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Feb 2021 09:55:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"select\": \"['id','firstname','lastname','gender','status','email','city','address','phone','registered_date']\",\n    \"limit\": 1,\n    \"Semua Data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"firstname\": \"Tiara\",\n                \"lastname\": \"Rahmania\",\n                \"gender\": \"female\",\n                \"status\": \"Active\",\n                \"email\": \"tiararahmania05@gmail.com\",\n                \"city\": \"sidoarjo\",\n                \"address\": \"villa jasmine 1 blok i no.33\",\n                \"phone\": \"081332496225\",\n                \"created_at\": \"2021-02-01T00:00:00.000000Z\",\n                \"updated_at\": \"2021-02-02T00:00:00.000000Z\"\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/posts?page=1\",\n        \"from\": 1,\n        \"last_page\": 1,\n        \"last_page_url\": \"http://localhost:8000/posts?page=1\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"pagination.previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/posts?page=1\",\n                \"label\": 1,\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"pagination.next\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": null,\n        \"path\": \"http://localhost:8000/posts\",\n        \"per_page\": 1,\n        \"prev_page_url\": null,\n        \"to\": 1,\n        \"total\": 1\n    }\n}"
+				}
+			]
+		}
+	]
+}
